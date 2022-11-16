@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:halo/form.dart';
+import 'package:halo/page/form.dart';
+import 'package:halo/model/to_do.dart';
+
 import 'package:flutter/cupertino.dart';
 
 void main() {
@@ -85,6 +87,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
+            ListTile(
+            title: const Text('To Do'),
+            onTap: () {
+                // Route menu ke halaman to do
+                Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ToDoPage()),
+                );
+            },
+        ),
           ],
         ),
       ),
