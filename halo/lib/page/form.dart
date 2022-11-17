@@ -1,6 +1,6 @@
 import 'package:halo/main.dart';
 import 'package:flutter/material.dart';
-import 'package:halo/model/to_do.dart';
+import 'package:halo/page/to_do_page.dart';
 
 class MyFormPage extends StatefulWidget {
   const MyFormPage({super.key});
